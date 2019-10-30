@@ -1,6 +1,6 @@
-import { Router } from 'express';
+import express from 'express';
 
-const routes = Router();
+const routes = express.Router();
 
 routes.get('/', (_, res) => {
   return res.json({ message: 'Hello from express router' });
