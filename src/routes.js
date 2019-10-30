@@ -2,8 +2,14 @@ import Router from 'express';
 
 const routes = Router();
 
-routes.get('/', (_, res) => {
-  return res.json({ message: 'Hello from express router' });
+routes.post('/sessions', (req, res) => {
+  const { email, password } = req.body;
+
+  return res.json({
+    message: "We've received your data:",
+    email,
+    password
+  });
 });
 
 export default routes;
