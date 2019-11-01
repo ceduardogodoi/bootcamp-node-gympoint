@@ -9,8 +9,6 @@ const models = [User];
 class Database {
   constructor() {
     this.init();
-
-    this.testDatabaseConnection();
   }
 
   init() {
